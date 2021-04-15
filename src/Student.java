@@ -1,8 +1,15 @@
 public class Student {
     //Permanent Registration Number
-    private int prn;
+    private int prn = 0;
     private String name;
     private String address;
+
+    public Student(int prn, String name, String address) {
+        //Manuel prn incrementer
+        this.prn = prn;
+        this.name = name;
+        this.address = address;
+    }
 
     public int getPrn() {
         return prn;
